@@ -17,9 +17,6 @@ function escolhaPC(){
 
 let placar = []
 
-let name = window.prompt('Qual o seu Nome?');
-alert("seja bem vindo(a) " + name + '!');
-
 function validation(){
     if(escolhafinal[0] === resultadoPC[0]){
         placar.push(resultadoFinal[2]) 
@@ -44,6 +41,17 @@ function resetButton(){
     resultadoPC = [];
 }
 
+function resultadoJogo(){
+
+    const escolhaUsuario = document.getElementById('escolhaUsuario')
+    const oPCescolheu = document.getElementById('oPCescolheu')
+    const resultadoHTML = document.getElementById('resultadoHTML')
+    
+    escolhaUsuario.innerText = "Voce escolheu "+escolhafinal
+    oPCescolheu.innerText = ` O pc escolheu ${resultadoPC}`
+    resultadoHTML.innerHTML = placar
+}
+
 botao1.addEventListener('click', (e)=>{
     placar = []
     escolhafinal.push(elementos[0])
@@ -52,7 +60,7 @@ botao1.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    document.write(escolhafinal + " vs " + resultadoPC + " = " + name + " " + placar)
+    resultadoJogo()
     resetButton()
 })
 
@@ -64,7 +72,7 @@ botao2.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    document.write(escolhafinal + " vs " + resultadoPC + " = "+ name + " " + placar)
+    resultadoJogo()
     resetButton()
 })
 
@@ -76,7 +84,7 @@ botao3.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    document.write(escolhafinal + " vs " + resultadoPC + " = " + name + " " + placar)
+    resultadoJogo()
     resetButton()
 })
 
