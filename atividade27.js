@@ -36,6 +36,22 @@ function validation(){
     return placar
 }
 
+function resultadoJogo(){
+
+    const footer = document.querySelector('footer')
+    
+    const selectPlayer = document.createElement('h3')
+    
+    selectPlayer.innerText = "Voce escolheu "+escolhafinal
+    
+    const selectPc = document.createElement('h3')
+    
+    selectPc.innerText = ` O pc escholeu ${resultadoPC}`
+    
+    footer.appendChild(selectPlayer)
+    footer.appendChild(selectPc)
+    }
+
 botao1.addEventListener('click', (e)=>{
     
     escolhafinal.push(elementos[0])
@@ -44,6 +60,7 @@ botao1.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
+    resultadoJogo()
 })
 
 botao2.addEventListener('click', (e)=>{
@@ -53,6 +70,7 @@ botao2.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
+    resultadoJogo()
 })
 
 botao3.addEventListener('click', (e)=>{
@@ -62,4 +80,8 @@ botao3.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
+    resultadoJogo()
+
 })
+
+
