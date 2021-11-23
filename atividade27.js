@@ -17,6 +17,9 @@ function escolhaPC(){
 
 let placar = []
 
+let name = window.prompt('Qual o seu Nome?');
+alert("seja bem vindo(a) " + name + '!');
+
 function validation(){
     if(escolhafinal[0] === resultadoPC[0]){
         placar.push(resultadoFinal[2]) 
@@ -42,18 +45,14 @@ function resetButton(){
 }
 
 botao1.addEventListener('click', (e)=>{
-<<<<<<< HEAD
     placar = []
-=======
-    
->>>>>>> 912cf7353f17a1aaebc1c57eb1544c3292708013
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
     escolhaPC()
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    alert(placar)
+    document.write(escolhafinal + " vs " + resultadoPC + " = " + name + " " + placar)
     resetButton()
 })
 
@@ -65,7 +64,7 @@ botao2.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    alert(placar)
+    document.write(escolhafinal + " vs " + resultadoPC + " = "+ name + " " + placar)
     resetButton()
 })
 
@@ -77,18 +76,11 @@ botao3.addEventListener('click', (e)=>{
     console.log(resultadoPC)
     validation()
     console.log(placar)
-    alert(placar)
+    document.write(escolhafinal + " vs " + resultadoPC + " = " + name + " " + placar)
     resetButton()
 })
 
-//const click = starting.addEventListener('click', function(e));
-//const reset = document.getElementById('reset').reset();
 
-const reset = document.getElementById('reset');
-reset.addEventListener('click', (e)=>{
-    escolhafinal = [];
-    resultadoPC = [];
-    placar = []
-})
+
 
 

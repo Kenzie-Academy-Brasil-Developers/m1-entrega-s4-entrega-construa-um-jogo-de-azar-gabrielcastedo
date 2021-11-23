@@ -28,6 +28,7 @@ body{
 img{
     width: 80%;
     height: 80%;
+    cursor:pointer;
 }
 
 #papel{
@@ -57,6 +58,10 @@ header h1{
     font-family: 'Press Start 2P', cursive;
     color: white;
     font-size: 12px;
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 
