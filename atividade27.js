@@ -37,6 +37,7 @@ function validation(){
 }
 
 botao1.addEventListener('click', (e)=>{
+    
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
     escolhaPC()
