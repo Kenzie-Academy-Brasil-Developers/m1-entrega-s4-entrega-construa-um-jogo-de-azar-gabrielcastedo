@@ -42,7 +42,11 @@ function resetButton(){
 }
 
 botao1.addEventListener('click', (e)=>{
+<<<<<<< HEAD
     placar = []
+=======
+    
+>>>>>>> 912cf7353f17a1aaebc1c57eb1544c3292708013
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
     escolhaPC()
