@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>  
         <h1>Jogo do Pedra, Papel, Tesoura.</h1>
-    </header>    
+
+    </header>  
+
     <section>
-        <h2>Regras do Jogo</h2>
-        <p></p>
+        <details>
+            <summary>Regras do Jogo</summary>
+            
+        <p>O Jogador deve Escolha Uma Das Opções Abaixo e Fara uma disputa com a maquina.</p>
+        <p> Se voce escolher Pedra e a maquina escolher tesoura , voce ganha disputa</p>
+        <p>Se Voce escolher Tesoura e a maquina escolher Papel , voce ganha a disputa</p>
+        <p>Caso voce escolha Papel e a Maquina escolher pedra , voce ganha a disputa</p>
+        <p>Caso os dois escolham o mesmo item Dara empate</p>
+        <p>Lembrado que esta Regras tambem vale pra Voce e a Maquina CUIDADO PARA NAO PERDER</p>
+        </details>
     </section>
     
-    <section>
-        <div>
-            <button id = "pedra">Pedra</button>
-            <button id = "papel">Papel</button>
-            <button id = "tesoura">Tesoura</button>
+    <section class="main">
+        <div class="tabuleiro">
+            <button id = "pedra"><img src="./img/Pedra-1.png" alt=""></button>
+            <button id = "papel"><img src="./img/papel-1.png" alt=""></button>
+            <button id = "tesoura"><img src="./img/tesoura-1.png" alt=""></button>
         </div>
     </section>
+    <footer>  
+        <button id = "reset">Resetar</button> 
+    </footer>
 
     <script type="text/javascript" src="atividade27.js"></script>
 </body>

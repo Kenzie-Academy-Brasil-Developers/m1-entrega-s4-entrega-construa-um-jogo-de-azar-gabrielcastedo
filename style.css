@@ -1,0 +1,181 @@
+/*MOBILE FIRST*/
+/*Imagens representativas*/
+
+body{
+    font-family: 'Press Start 2P', cursive;
+
+}
+.tabuleiro{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.main{
+    
+    width: 100%;
+    height: 180px
+
+}
+
+#pedra{
+    border: none;
+    background-color: white;
+    width: 100px;
+    height: 105px;
+
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+
+#papel{
+    border: none;
+    background-color: white;
+    width: 100px;
+    height: 105px;
+}
+#tesoura{
+    border: none;
+    background-color: white;
+    width: 100px;
+    height: 105px;
+
+}
+
+/*HEADER*/
+
+header{
+    
+    width: 100vw;
+    height: 15vw;
+    background-color: aqua;
+}
+header h1{
+    line-height: 51px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+/*Regras*/
+
+details{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(224, 96, 64);
+    padding-bottom: 15px;
+}
+summary{
+    color: black;
+    text-align: center;
+    height: 50%;
+    background-color: turquoise;
+}
+details p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+
+/*Footer Botao de remover */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+#reset{
+    border: none;
+    width: 100px;
+    height: 55px;
+    background-color: brown;
+    color: rgb(223, 215, 215);
+    border-radius: 30px;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*Desktop*/
+@media screen and (min-width: 700px) {
+
+    header{
+        width: 100vw;
+        height: 4vw;
+        background-color: aqua;
+    }
+
+    header h1{
+        line-height: 65px;
+        font-size: 32px;
+        
+    }
+
+    /*Imagens representativas*/
+    .tabuleiro{ 
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .main{
+        
+        width: 100%;
+        height: 380px
+    
+    }
+    img{
+        width: 80%;
+        height: 80%;
+    }
+
+    #pedra{
+        border: none;
+        background-color: white;
+        width: 200px;
+        height: 205px;
+    
+    }
+    #papel{
+        border: none;
+        background-color: white;
+        width: 200px;
+        height: 205px;
+    }
+    #tesoura{
+        border: none;
+        background-color: white;
+        width:200px;
+        height: 205px;
+    
+    }
+
+    
+
+/*Regras*/
+
+    details{
+      
+
+    }
+    summary{
+      
+    }
+/*Botao reset */
+
+#reset{
+    border: none;
+    width: 170px;
+    height: 75px;
+    background-color: brown;
+    color: rgb(223, 215, 215);
+    border-radius: 30px;
+    font-size: 22px;
+}
+}
