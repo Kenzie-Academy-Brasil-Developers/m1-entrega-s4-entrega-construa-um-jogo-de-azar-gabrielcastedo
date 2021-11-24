@@ -2,16 +2,38 @@ body{
     width: auto;
 }
 
+body img{
+    opacity: 0.5;
+}
+
 #titulo{
     display: flex;
     justify-content: center;
     font-family: 'graduate';
     background-color: lightsalmon;
+    font-size: 18px;
+}
+
+#tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Graduate', cursive;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+}
+
+li{
+  list-style: none;  
+  text-align: center;
 }
 
 #botoes{
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 button{
     font-family: 'Graduate', cursive;
@@ -21,11 +43,14 @@ button{
     margin-left: 25px;
 }
 
+#paiDaDivTabela{
+}
+
 #divTabelaPai {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 tbody{
