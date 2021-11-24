@@ -95,7 +95,7 @@ console.table(arrTable)
 
 let tabela = document.createElement('table')
 let tbody = document.createElement('tbody')
-
+let arrRespostas1 = []
 function criandoHTML(){
 
     const palavra1 = document.getElementById('palavra1')
@@ -122,11 +122,18 @@ function criandoHTML(){
 
             conteudoTabela.innerHTML = arrTable[indice][z]        
             linha.appendChild(conteudoTabela)
+
+            conteudoTabela.addEventListener('click', function(){
+                arrRespostas1.push(EventTarget)
+
+            })
+            console.log(arrRespostas1)
         }
         tbody.appendChild(linha)
         console.log(linha)
     }
     tabela.classList.add('tabela')
+    
 }
 criandoHTML()
 
@@ -137,6 +144,7 @@ botaoReset.addEventListener('click', () => {
     tbody.innerHTML = ''
     criandoHTML()
 })
+
 
 
 /* 1. TABLE
