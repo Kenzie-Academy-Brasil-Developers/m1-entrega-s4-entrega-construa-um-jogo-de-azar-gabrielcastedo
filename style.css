@@ -23,11 +23,21 @@ body{
     background-color: white;
     width: 100px;
     height: 105px;
+    position: relative;
+    top: 40px;
+    transition: transform 0.5s;
+    transform: translateX() scale(0.2);
+    
+}
+#pedra:hover{
+
+    transform: translateX(12px) scale(1.2);
 
 }
 img{
     width: 80%;
     height: 80%;
+    cursor:pointer;
 }
 
 #papel{
@@ -35,6 +45,15 @@ img{
     background-color: white;
     width: 100px;
     height: 105px;
+    transition: transform 0.5s;
+    transform: translateX() scale(0.2);
+    position: relative;
+    bottom: 40px;
+}
+#papel:hover{
+
+    transform: translateX(12px) scale(1.2);
+
 }
 #tesoura{
     border: none;
@@ -42,8 +61,16 @@ img{
     width: 100px;
     height: 105px;
 
+    transition: transform 0.5s;
+    transform: translateX() scale(0.2);
+    position: relative;
+    top: 40px;
 }
+#tesoura:hover{
 
+    transform: translateX(12px) scale(1.2);
+
+}
 /*HEADER*/
 
 header{
@@ -60,10 +87,14 @@ header h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
 
 
 
-/*Regras*/
+
+
 
 details{
     color: white;
@@ -76,7 +107,7 @@ details{
 summary{
     color: black;
     text-align: center;
-    height: 30%;
+    height: 50%;
     background-color: turquoise;
 }
 details p{
@@ -88,7 +119,13 @@ details p{
 /*Footer Botao de remover */
 footer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+footer h3{
+    margin-bottom: 15px;
 }
 
 #reset{
@@ -100,6 +137,11 @@ footer{
     border-radius: 30px;
     font-size: 12px;
     font-family: 'Press Start 2P', cursive;
+}
+/*ESCOLHA USUARIO*/
+
+#resultadoHTML{
+    text-align: center;
 }
 
 /*Desktop*/
@@ -136,26 +178,50 @@ footer{
     }
 
     #pedra{
+        margin-right: 10px;
         border: none;
         background-color: white;
         width: 200px;
         height: 205px;
+        transition: transform 0.5s;
+        transform: translateX() scale(0.2);
+        position: relative;
+        top: 140px;
+    }
+    #pedra:hover{
+   
+        transform: translateX(12px) scale(1.2);
     
     }
+    
     #papel{
         border: none;
         background-color: white;
         width: 200px;
         height: 205px;
+        transition: transform 0.5s;
+        transform: translateX() scale(0.2);
+        position: relative;
+        bottom: 50px;
+    }
+    #papel:hover{
+        transform: translateX(12px) scale(1.2);
     }
     #tesoura{
         border: none;
         background-color: white;
         width:200px;
         height: 205px;
+        transition: transform 0.5s;
+        transform: translateX() scale(0.2);
+        position: relative;
+        top: 140px;
     
     }
+    #tesoura:hover{
+        transform: translateX(12px) scale(1.2);
 
+    }
     
 
 /*Regras*/
@@ -182,4 +248,17 @@ footer{
     border-radius: 30px;
     font-size: 22px;
 }
+
+/*ESCOLHA USUARIO*/
+#escolhaUsuario{
+
+}
+#oPCescolheu{
+
+}
+#resultadoHTML{
+
+}
+
+
 }

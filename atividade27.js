@@ -1,5 +1,5 @@
 const elementos = ['Pedra', 'Papel', 'Tesoura']
-const resultadoFinal = ['Você venceu!', 'Você perdeu!', 'Você empatou!Tente novamente!']
+const resultadoFinal = ['Você venceu!', 'Você perdeu!', 'Você empatou! Tente novamente!']
 
 const botao1 = document.getElementById('pedra')
 const botao2 = document.getElementById('papel')
@@ -36,24 +36,24 @@ function validation(){
     return placar
 }
 
+function resetButton(){
+    escolhafinal = [];
+    resultadoPC = [];
+}
+
 function resultadoJogo(){
 
-    const footer = document.querySelector('footer')
+    const escolhaUsuario = document.getElementById('escolhaUsuario')
+    const oPCescolheu = document.getElementById('oPCescolheu')
+    const resultadoHTML = document.getElementById('resultadoHTML')
     
-    const selectPlayer = document.createElement('h3')
-    
-    selectPlayer.innerText = "Voce escolheu "+escolhafinal
-    
-    const selectPc = document.createElement('h3')
-    
-    selectPc.innerText = ` O pc escholeu ${resultadoPC}`
-    
-    footer.appendChild(selectPlayer)
-    footer.appendChild(selectPc)
-    }
+    escolhaUsuario.innerText = "Voce escolheu "+escolhafinal
+    oPCescolheu.innerText = ` O pc escolheu ${resultadoPC}`
+    resultadoHTML.innerHTML = placar
+}
 
 botao1.addEventListener('click', (e)=>{
-    
+    placar = []
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
     escolhaPC()
@@ -61,9 +61,11 @@ botao1.addEventListener('click', (e)=>{
     validation()
     console.log(placar)
     resultadoJogo()
+    resetButton()
 })
 
 botao2.addEventListener('click', (e)=>{
+    placar = []
     escolhafinal.push(elementos[1])
     console.log(escolhafinal)
     escolhaPC()
@@ -71,9 +73,11 @@ botao2.addEventListener('click', (e)=>{
     validation()
     console.log(placar)
     resultadoJogo()
+    resetButton()
 })
 
 botao3.addEventListener('click', (e)=>{
+    placar = []
     escolhafinal.push(elementos[2])
     console.log(escolhafinal)
     escolhaPC()
@@ -81,7 +85,5 @@ botao3.addEventListener('click', (e)=>{
     validation()
     console.log(placar)
     resultadoJogo()
-
+    resetButton()
 })
-
-
