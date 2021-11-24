@@ -1,0 +1,52 @@
+body{
+    width: auto;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'graduate';
+    background-color: lightsalmon;
+}
+
+#botoes{
+    display: flex;
+    justify-content:center;
+}
+button{
+    font-family: 'Graduate', cursive;
+}
+
+#RESET{
+    margin-left: 25px;
+}
+
+#divTabelaPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+tbody{
+    border: solid black 2px;
+}
+
+.tabela{
+    border: solid black 1px;
+}
+
+tr{
+
+}
+
+td{
+    border: solid black 1px;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    font-family: 'Graduate', cursive;
+    font-size: 20px;
+    background-color: lightyellow;
+}
