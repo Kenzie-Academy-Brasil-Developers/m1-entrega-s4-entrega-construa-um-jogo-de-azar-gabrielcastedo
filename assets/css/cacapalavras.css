@@ -2,11 +2,11 @@ body {
     width: auto;
 }
 
-body img{
+body img {
     opacity: 0.5;
 }
 
-#titulo{
+#titulo {
     display: flex;
     justify-content: center;
     font-family: 'graduate';
@@ -14,7 +14,7 @@ body img{
     font-size: 18px;
 }
 
-#tema{
+#tema {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +25,14 @@ body img{
     color: black;
 }
 
-li{
-  list-style: none;  
-  text-align: center;
+li {
+    list-style: none;
+    text-align: center;
 }
 
 #botoes {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -42,9 +42,6 @@ button {
 
 #RESET {
     margin-left: 25px;
-}
-
-#paiDaDivTabela{
 }
 
 #divTabelaPai {
@@ -71,4 +68,13 @@ td {
     font-family: 'Graduate', cursive;
     font-size: 20px;
     background-color: lightyellow;
+}
+
+td:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: red;
 }
