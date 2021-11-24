@@ -12,10 +12,6 @@ let randomWord1 = arrSports[randomNumber(0, 19)];
 let randomWord2 = arrSports[randomNumber(0, 19)];
 let randomWord3 = arrSports[randomNumber(0, 19)];
 
-console.log(randomWord1)
-console.log(randomWord2)
-console.log(randomWord3)
-
 for (let i = 0; i < 3; i++) {
     if (randomWord1 === randomWord2) {
         randomWord2 = arrSports[randomNumber(0, 19)];
@@ -33,10 +29,10 @@ let arrTable = [];
 for (let row = 0; row < 10; row++) {
     let arrColumn = []
     for (let column = 0; column < 10; column++) {
-        arrColumn.push(letrasTabela[randomNumber(0,25)]);
+        arrColumn.push(letrasTabela[randomNumber(0, 25)]);
     }
     arrTable.push(arrColumn);
-    }
+}
 
 // LOOPS PARA ADICIONAR LETRAS NA GRADE
 
@@ -79,36 +75,33 @@ for (let i = 0; i < randomWord3.length; i++) {
     randomNumberColumn3++
 }
 
-console.table(arrTable)
-
 
 /* ----------------------DOM TABELA------------------------------ */
 
-function criandoHTML(){
-    
-const tabela = document.createElement('table')
-const tbody = document.createElement('tbody')
-const divTabelaPai = document.getElementById('divTabelaPai')
-divTabelaPai.appendChild(tabela)
-tabela.appendChild(tbody)
+
+function criandoHTML() {
+
+    const tabela = document.createElement('table')
+    const tbody = document.createElement('tbody')
+    const divTabelaPai = document.getElementById('divTabelaPai')
+    divTabelaPai.appendChild(tabela)
+    tabela.appendChild(tbody)
 
 
-for( let indice = 0; indice < 10; indice++){
-    const linha = document.createElement('tr')
-        for (let z = 0; z <10; z++){
-        const conteudoTabela = document.createElement('td')
+    for (let indice = 0; indice < 10; indice++) {
+        const linha = document.createElement('tr')
+        for (let z = 0; z < 10; z++) {
+            const conteudoTabela = document.createElement('td')
 
-        conteudoTabela.innerText = arrTable[indice][z]        
-        linha.appendChild(conteudoTabela)
+            conteudoTabela.innerText = arrTable[indice][z]
+            linha.appendChild(conteudoTabela)
+        }
+        tbody.appendChild(linha)
     }
-    tbody.appendChild(linha)
-    console.log(linha)
-}
 
+    tabela.classList.add('tabela')
+    thead.classList.add('colunasTitulo')
 
-tabela.classList.add('tabela')
-thead.classList.add('colunasTitulo')
-
-tabela. innerText = console.table(arrTable)
+    tabela.innerText = console.table(arrTable)
 }
 criandoHTML()

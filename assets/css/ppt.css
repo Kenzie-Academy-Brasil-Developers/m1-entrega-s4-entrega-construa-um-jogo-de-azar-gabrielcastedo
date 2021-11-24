@@ -1,43 +1,46 @@
 /*MOBILE FIRST*/
 /*Imagens representativas*/
 
-body{
+body {
     font-family: 'Press Start 2P', cursive;
 
 }
-.tabuleiro{ 
+
+.tabuleiro {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    
+
 }
-.main{
-    
+
+.main {
+
     width: 100%;
     height: 180px
-
 }
 
-#pedra{
+#pedra {
     border: none;
     background-color: white;
     width: 100px;
     height: 105px;
 
 }
-img{
+
+img {
     width: 80%;
     height: 80%;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#papel{
+#papel {
     border: none;
     background-color: white;
     width: 100px;
     height: 105px;
 }
-#tesoura{
+
+#tesoura {
     border: none;
     background-color: white;
     width: 100px;
@@ -47,13 +50,14 @@ img{
 
 /*HEADER*/
 
-header{
-    
+header {
+
     width: 100vw;
     height: 15vw;
     background-color: aqua;
 }
-header h1{
+
+header h1 {
     line-height: 51px;
     font-family: 'Press Start 2P', cursive;
     color: white;
@@ -61,7 +65,7 @@ header h1{
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -70,7 +74,7 @@ h2{
 
 
 
-details{
+details {
     color: white;
     text-align: center;
     width: 100%;
@@ -78,31 +82,33 @@ details{
     background-color: rgb(224, 96, 64);
     padding-bottom: 15px;
 }
-summary{
+
+summary {
     color: black;
     text-align: center;
     height: 50%;
     background-color: turquoise;
 }
-details p{
+
+details p {
     margin-top: 15px;
     font-size: 16px;
 }
 
 
 /*Footer Botao de remover */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-footer h3{
+footer h3 {
     margin-bottom: 15px;
 }
 
-#reset{
+#reset {
     border: none;
     width: 100px;
     height: 55px;
@@ -116,65 +122,68 @@ footer h3{
 /*Desktop*/
 @media screen and (min-width: 700px) {
 
-    header{
+    header {
         width: 100vw;
         height: 4vw;
         background-color: aqua;
     }
 
-    header h1{
+    header h1 {
         line-height: 65px;
         font-size: 32px;
-        
+
     }
 
     /*Imagens representativas*/
-    .tabuleiro{ 
+    .tabuleiro {
         margin-top: 100px;
         display: flex;
         justify-content: center;
-        
+
     }
-    .main{
-        
+
+    .main {
+
         width: 100%;
         height: 380px
-    
     }
-    img{
+
+    img {
         width: 80%;
         height: 80%;
     }
 
-    #pedra{
+    #pedra {
         border: none;
         background-color: white;
         width: 200px;
         height: 205px;
-    
-    }
-    #papel{
-        border: none;
-        background-color: white;
-        width: 200px;
-        height: 205px;
-    }
-    #tesoura{
-        border: none;
-        background-color: white;
-        width:200px;
-        height: 205px;
-    
+
     }
 
-    
-#reset{
-    border: none;
-    width: 170px;
-    height: 75px;
-    background-color: brown;
-    color: rgb(223, 215, 215);
-    border-radius: 30px;
-    font-size: 22px;
-}
+    #papel {
+        border: none;
+        background-color: white;
+        width: 200px;
+        height: 205px;
+    }
+
+    #tesoura {
+        border: none;
+        background-color: white;
+        width: 200px;
+        height: 205px;
+
+    }
+
+
+    #reset {
+        border: none;
+        width: 170px;
+        height: 75px;
+        background-color: brown;
+        color: rgb(223, 215, 215);
+        border-radius: 30px;
+        font-size: 22px;
+    }
 }
