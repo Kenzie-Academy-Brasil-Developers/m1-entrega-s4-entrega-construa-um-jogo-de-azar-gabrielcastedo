@@ -1,4 +1,4 @@
-body{
+body {
     width: auto;
 }
 
@@ -30,16 +30,17 @@ li{
   text-align: center;
 }
 
-#botoes{
+#botoes {
     display: flex;
     justify-content:center;
     align-items: center;
 }
-button{
+
+button {
     font-family: 'Graduate', cursive;
 }
 
-#RESET{
+#RESET {
     margin-left: 25px;
 }
 
@@ -53,19 +54,15 @@ button{
     margin-bottom: 50px;
 }
 
-tbody{
+tbody {
     border: solid black 2px;
 }
 
-.tabela{
+.tabela {
     border: solid black 1px;
 }
 
-tr{
-
-}
-
-td{
+td {
     border: solid black 1px;
     align-items: center;
     text-align: center;

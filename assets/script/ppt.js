@@ -8,7 +8,7 @@ const botao3 = document.getElementById('tesoura')
 let escolhafinal = []
 let resultadoPC = []
 
-function escolhaPC(){
+function escolhaPC() {
     let numero = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
     resultadoPC.push(elementos[numero])
 
@@ -17,42 +17,42 @@ function escolhaPC(){
 
 let placar = []
 
-function validation(){
-    if(escolhafinal[0] === resultadoPC[0]){
-        placar.push(resultadoFinal[2]) 
-    } else if (escolhafinal[0] === elementos[0] && resultadoPC[0] === elementos[1]){
+function validation() {
+    if (escolhafinal[0] === resultadoPC[0]) {
+        placar.push(resultadoFinal[2])
+    } else if (escolhafinal[0] === elementos[0] && resultadoPC[0] === elementos[1]) {
         placar.push(resultadoFinal[1])
-    } else if (escolhafinal[0] === elementos[0] && resultadoPC[0] === elementos[2]){
+    } else if (escolhafinal[0] === elementos[0] && resultadoPC[0] === elementos[2]) {
         placar.push(resultadoFinal[0])
-    } else if (escolhafinal[0] === elementos[1] && resultadoPC[0] === elementos[0]){
+    } else if (escolhafinal[0] === elementos[1] && resultadoPC[0] === elementos[0]) {
         placar.push(resultadoFinal[0])
-    } else if (escolhafinal[0] === elementos[1] && resultadoPC[0] === elementos[2]){
+    } else if (escolhafinal[0] === elementos[1] && resultadoPC[0] === elementos[2]) {
         placar.push(resultadoFinal[1])
-    } else if (escolhafinal[0] === elementos[2] && resultadoPC[0] === elementos[0]){
+    } else if (escolhafinal[0] === elementos[2] && resultadoPC[0] === elementos[0]) {
         placar.push(resultadoFinal[1])
-    } else if (escolhafinal[0] === elementos[2] && resultadoPC[0] === elementos[1]){
+    } else if (escolhafinal[0] === elementos[2] && resultadoPC[0] === elementos[1]) {
         placar.push(resultadoFinal[0])
-    }       
+    }
     return placar
 }
 
-function resetButton(){
+function resetButton() {
     escolhafinal = [];
     resultadoPC = [];
 }
 
-function resultadoJogo(){
+function resultadoJogo() {
 
     const escolhaUsuario = document.getElementById('escolhaUsuario')
     const oPCescolheu = document.getElementById('oPCescolheu')
     const resultadoHTML = document.getElementById('resultadoHTML')
-    
-    escolhaUsuario.innerText = "Voce escolheu "+escolhafinal
+
+    escolhaUsuario.innerText = "Voce escolheu " + escolhafinal
     oPCescolheu.innerText = ` O pc escolheu ${resultadoPC}`
     resultadoHTML.innerHTML = placar
 }
 
-botao1.addEventListener('click', (e)=>{
+botao1.addEventListener('click', (e) => {
     placar = []
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
@@ -64,7 +64,7 @@ botao1.addEventListener('click', (e)=>{
     resetButton()
 })
 
-botao2.addEventListener('click', (e)=>{
+botao2.addEventListener('click', (e) => {
     placar = []
     escolhafinal.push(elementos[1])
     console.log(escolhafinal)
@@ -76,7 +76,7 @@ botao2.addEventListener('click', (e)=>{
     resetButton()
 })
 
-botao3.addEventListener('click', (e)=>{
+botao3.addEventListener('click', (e) => {
     placar = []
     escolhafinal.push(elementos[2])
     console.log(escolhafinal)
@@ -87,8 +87,3 @@ botao3.addEventListener('click', (e)=>{
     resultadoJogo()
     resetButton()
 })
-
-
-
-
-

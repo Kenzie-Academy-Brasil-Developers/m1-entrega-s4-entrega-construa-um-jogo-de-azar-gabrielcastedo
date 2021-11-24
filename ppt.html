@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/ppt.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jogo do Pedra, Papel, Tesoura.</h1>
+
+    </header>
+
+    <section>
+        <details>
+            <summary>Regras do Jogo</summary>
+
+            <p>O Jogador deve Escolha Uma Das Opções Abaixo e Fara uma disputa com a maquina.</p>
+            <p> Se voce escolher Pedra e a maquina escolher tesoura , voce ganha disputa</p>
+            <p>Se Voce escolher Tesoura e a maquina escolher Papel , voce ganha a disputa</p>
+            <p>Caso voce escolha Papel e a Maquina escolher pedra , voce ganha a disputa</p>
+            <p>Caso os dois escolham o mesmo item Dara empate</p>
+            <p>Lembrado que esta Regras tambem vale pra Voce e a Maquina CUIDADO PARA NAO PERDER</p>
+        </details>
+    </section>
+
+    <section class="main">
+        <div class="tabuleiro">
+            <div>
+                <h2>Pedra</h2>
+                <button id="pedra"><img src="assets/img/Pedra-1.png" alt=""></button>
+            </div>
+            <div>
+                <h2>Papel</h2>
+                <button id="papel"><img src="assets/img/papel-1.png" alt=""></button>
+            </div>
+            <div>
+                <h2>Tesoura</h2>
+                <button id="tesoura"><img src="assets/img/tesoura-1.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3 id="escolhaUsuario"></h3>
+        <h3 id="oPCescolheu"></h3>
+        <h3 id="resultadoHTML"></h3>
+    </footer>
+
+    <script type="text/javascript" src="assets/script/ppt.js"></script>
+</body>
+
+</html>
