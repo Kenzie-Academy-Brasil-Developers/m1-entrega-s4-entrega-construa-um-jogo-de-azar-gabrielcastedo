@@ -1,5 +1,5 @@
-const elementos = ['Pedra', 'Papel', 'Tesoura']
-const resultadoFinal = ['Você venceu!', 'Você perdeu!', 'Você empatou! Tente novamente!']
+const elementos = ['PEDRA', 'PAPEL', 'TESOURA']
+const resultadoFinal = ['Você venceu!', 'Você perdeu!', 'Vocês empataram! Tente novamente!']
 
 const botao1 = document.getElementById('pedra')
 const botao2 = document.getElementById('papel')
@@ -47,8 +47,8 @@ function resultadoJogo() {
     const oPCescolheu = document.getElementById('oPCescolheu')
     const resultadoHTML = document.getElementById('resultadoHTML')
 
-    escolhaUsuario.innerText = "Voce escolheu " + escolhafinal
-    oPCescolheu.innerText = ` O pc escolheu ${resultadoPC}`
+    escolhaUsuario.innerText = "Você escolheu " + escolhafinal
+    oPCescolheu.innerText = ` A máquina escolheu ${resultadoPC}`
     resultadoHTML.innerHTML = placar
 }
 
