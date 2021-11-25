@@ -1,9 +1,7 @@
 html {
-    background-image: url(/assets/img/GsVB7j.jpg);
+    background-image: url(../../assets/img/GsVB7j.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-
-
 }
 
 body {
@@ -11,44 +9,37 @@ body {
     height: 100vh;
     overflow: hidden;
     color: azure;
-
-
 }
 
 header {
-    margin-top: 50px;
-    line-height: 80px;
+    line-height: 70px;
     width: 100vw;
     height: 30vh;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 main {
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .jogo-cp {
-
     position: relative;
     top: 50px;
 }
 
 .jogo-ppt {
-
     position: relative;
     top: 50px;
 }
 
 .jogo-ppt img {
-
-    border-radius: 30%;
-    width: 35vw;
-    height: 30vh;
+    border-radius: 50%;
+    width: 40vw;
+    height: 25vh;
     transition: transform 1s;
     transform: translateX() scale(0.2);
     position: relative;
@@ -56,16 +47,13 @@ main {
 }
 
 .jogo-ppt:hover {
-
     transform: translateX(15px) scale(1.2);
-
 }
 
 .jogo-cp img {
-
-    border-radius: 30%;
-    width: 35vw;
-    height: 30vh;
+    border-radius: 50%;
+    width: 40vw;
+    height: 25vh;
     transition: transform 1s;
     transform: translateX() scale(0.2);
     position: relative;
@@ -73,21 +61,18 @@ main {
 }
 
 .jogo-cp:hover {
-
     transform: translateX(15px) scale(1.2);
-
 }
 
 footer {
-    margin-top: 30vw;
+    margin-top: 40vw;
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
+    text-align: center;
 }
 
 footer h3 {
-
     margin: 2px;
-
 }
 
 footer p {
@@ -96,84 +81,70 @@ footer p {
 
 @media screen and (min-width: 700px) {
     body {
-
-        background-image: url(/assets/img/GsVB7j.jpg);
+        background-image: url(../../assets/img/GsVB7j.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-
-
-        line-height: 200px;
         color: azure;
     }
 
     header {
-        font-size: 30px;
+        font-size: 35px;
         width: 100vw;
         height: 30vh;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
     main {
-
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
 
     .jogo-cp {
+        margin-bottom: 50px;
         position: relative;
-        bottom: 50px;
     }
 
     .jogo-ppt {
+        margin-bottom: 50px;
         position: relative;
-
     }
 
     .jogo-ppt img {
-
-        border-radius: 20%;
+        border-radius: 50%;
         width: 20vw;
-        height: 20vh;
+        height: 30vh;
         transition: transform 1s;
         transform: translateX() scale(0.2);
         position: relative;
-        top: 40px;
+        top: 0px;
     }
 
     .jogo-ppt:hover {
-
         transform: translateX(15px) scale(1.2);
-
     }
 
     .jogo-cp img {
-
-        border-radius: 20%;
-
+        border-radius: 50%;
         width: 20vw;
-        height: 20vh;
+        height: 30vh;
         transition: transform 1s;
         transform: translateX() scale(0.2);
         position: relative;
-        top: 40px;
+        top: 0px;
     }
 
     .jogo-cp:hover {
-
         transform: translateX(15px) scale(1.2);
-
     }
 
     footer {
         font-family: 'Press Start 2P', cursive;
-        font-size: 10px;
+        font-size: 12px;
         margin: 1px;
         line-height: 10px;
         margin-top: 100px;
-
+        text-align: center;
     }
-
-
 }
