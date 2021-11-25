@@ -24,15 +24,18 @@ body {
     margin-bottom: 20px;
     color: black;
 }
-#temaEsporte{
+
+#temaEsporte {
     width: 50%;
 }
-ul{
+
+ul {
     padding: 0px;
     width: 50%;
     align-items: center;
     text-align: center;
 }
+
 li {
     list-style: none;
 
@@ -83,7 +86,7 @@ td:hover {
     cursor: pointer;
 }
 
-footer{
+footer {
     font-family: 'Graduate', cursive;
     font-size: 13px;
     display: flex;
@@ -98,15 +101,15 @@ footer{
 
 
 
-@media ( min-width: 720px ){
+@media (min-width: 720px) {
     body {
         width: auto;
     }
-    
+
     body img {
         opacity: 0.5;
     }
-    
+
     #titulo {
         display: flex;
         justify-content: center;
@@ -114,7 +117,7 @@ footer{
         background-color: lightsalmon;
         font-size: 18px;
     }
-    
+
     #tema {
         display: flex;
         justify-content: center;
@@ -126,7 +129,7 @@ footer{
         color: black;
     }
 
-    #temaEsporte{
+    #temaEsporte {
         width: 50%;
     }
 
@@ -134,36 +137,36 @@ footer{
         list-style: none;
         color: black;
     }
-    
+
     #botoes {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     button {
         font-family: 'Graduate';
     }
-    
+
     #RESET {
         margin-left: 25px;
     }
-    
+
     #divTabelaPai {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
     }
-    
+
     tbody {
         border: solid black 2px;
     }
-    
+
     .tabela {
         border: solid black 1px;
     }
-    
+
     td {
         border: solid black 1px;
         align-items: center;
@@ -174,29 +177,30 @@ footer{
         font-size: 20px;
         background-color: lightyellow;
     }
-    
+
     td:hover {
         background-color: lightgray;
         cursor: pointer;
     }
-    
+
     .selected {
         background-color: red;
     }
 
-    footer{
+    footer {
         font-family: 'Graduate', cursive;
         font-size: 13px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    footer h3{
+
+    footer h3 {
         display: flex;
         justify-content: center;
     }
 
-    footer p{
+    footer p {
         display: flex;
         justify-content: center;
     }
