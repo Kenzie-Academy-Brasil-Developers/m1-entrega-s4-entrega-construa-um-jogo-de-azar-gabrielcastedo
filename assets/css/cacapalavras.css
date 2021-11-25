@@ -161,7 +161,7 @@ footer {
 }
 
 .selected {
-    background-color: red;
+    background-color: yellowgreen;
 }
 
 @media (min-width: 720px) {
