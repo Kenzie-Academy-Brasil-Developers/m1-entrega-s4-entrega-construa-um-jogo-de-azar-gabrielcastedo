@@ -47,10 +47,14 @@ function resultadoJogo(){
     const oPCescolheu = document.getElementById('oPCescolheu')
     const resultadoHTML = document.getElementById('resultadoHTML')
     
-    escolhaUsuario.innerText = "Voce escolheu "+escolhafinal
+    escolhaUsuario.innerText = "Voce escolheu "+ escolhafinal
     oPCescolheu.innerText = ` O pc escolheu ${resultadoPC}`
     resultadoHTML.innerHTML = placar
 }
+
+
+
+
 
 botao1.addEventListener('click', (e)=>{
     placar = []
@@ -62,6 +66,8 @@ botao1.addEventListener('click', (e)=>{
     console.log(placar)
     resultadoJogo()
     resetButton()
+    
+    
 })
 
 botao2.addEventListener('click', (e)=>{
@@ -74,6 +80,8 @@ botao2.addEventListener('click', (e)=>{
     console.log(placar)
     resultadoJogo()
     resetButton()
+    
+    
 })
 
 botao3.addEventListener('click', (e)=>{
@@ -86,4 +94,12 @@ botao3.addEventListener('click', (e)=>{
     console.log(placar)
     resultadoJogo()
     resetButton()
+   
+    
+   
 })
+
+
+
+
+
