@@ -146,12 +146,13 @@ footer h3{
 
 .btn-home{
     width: 100px;
-    border-radius: 50%;
+    border-radius: 20%;
     color: white;
     border: none;
     background: linear-gradient(to bottom, #009933 0%, #ffcc00 100%);
     position: relative;
-    bottom: 80px;
+    bottom: 1px;
+    top: 10px;
     left: 10px;
     height: 25px;
     
@@ -159,6 +160,7 @@ footer h3{
 
 /*Desktop*/
 @media screen and (min-width: 700px) {
+
 
     header{
         width: 100vw;
