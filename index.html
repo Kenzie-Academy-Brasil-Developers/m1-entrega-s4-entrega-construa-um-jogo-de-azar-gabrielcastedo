@@ -10,10 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    <audio src="x-special/nautilus-clipboard
-    copy
-    file:///home/dylan/M%C3%BAsica/downloads.music/Cartoon%20-%20Why%20We%20Lose%20(feat.%20Coleman%20Trapp)%20%5BNCS%20Release%5D.mp3
-    " autoplay controls></audio>
+    <audio preload="auto" loop controls>
+        <source src="music/Cartoon - Why We Lose (feat. Coleman Trapp) [NCS Release].mp3" type="audio/mpeg">
+    </audio>
     <header>  
         <h1>Jogo do Pedra, Papel, Tesoura.</h1>
 
@@ -35,6 +34,7 @@
         <p>Lembrado que esta Regras tambem vale pra Voce e a Maquina CUIDADO PARA NAO PERDER</p>
         </details>
     </section>
+    <p id="temporizador">timer</p>
     
     <section class="main">
         <div class="tabuleiro">
@@ -58,6 +58,6 @@
         <button id = "reset">Resetar</button> 
     </footer>
 
-    <script type="text/javascript" src="teste.js"></script>
+    <script type="text/javascript" src="atividade27.js"></script>
 </body>
 </html>

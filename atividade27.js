@@ -8,6 +8,26 @@ const botao3 = document.getElementById('tesoura')
 let escolhafinal = []
 let resultadoPC = []
 
+const startingMinutes = 10;
+let time = startingMinutes * 60;
+
+const countdownEl = document.getElementById('temporizador');
+
+intervalo(cronometro, 1000);
+
+function cronometro(){
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}
+
+cronometro()
+
+
 function escolhaPC(){
     let numero = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
     resultadoPC.push(elementos[numero])
@@ -45,6 +65,7 @@ function resetButton(){
 }
 
 botao1.addEventListener('click', (e)=>{
+   // cronometro()
     placar = []
     escolhafinal.push(elementos[0])
     console.log(escolhafinal)
@@ -57,6 +78,7 @@ botao1.addEventListener('click', (e)=>{
 })
 
 botao2.addEventListener('click', (e)=>{
+   // cronometro()
     placar = []
     escolhafinal.push(elementos[1])
     console.log(escolhafinal)
@@ -69,6 +91,7 @@ botao2.addEventListener('click', (e)=>{
 })
 
 botao3.addEventListener('click', (e)=>{
+  //  cronometro()
     placar = []
     escolhafinal.push(elementos[2])
     console.log(escolhafinal)
