@@ -1,5 +1,5 @@
-const arrSports = ['futebol', 'volei', 'tenis', "futsal", "nataçao", "handball", 'basquete', 'ciclismo', 'boxe', 'judo', 'vela', 'golfe', 'bocha', 'skate', 'xadrez', 'hipismo', 'corrida', 'atletismo', 'rugby', 'surf'];
-const letrasTabela = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const arrSports = ['FUTEBOL', 'VOLEI', 'TENIS', "FUTSAL", "NATACAO", "HANDBALL", 'BASQUETE', 'CICLISMO', 'BOXE', 'JUDO', 'VELA', 'GOLFE', 'BOCHA', 'SKATE', 'XADREZ', 'HIPISMO', 'CORRIDA', 'ATLETISMO', 'RUGBY', 'SURF'];
+const letrasTabela = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 let randomNumber = (min, max) => {
     min = Math.ceil(min);
@@ -161,7 +161,6 @@ criandoHTML()
 
 function validate(value) {
 
-    /*     value = Array.from(value) */
     console.log(value)
     console.log(typeof value)
     console.log(typeof controleLinhaColuna)
@@ -169,43 +168,28 @@ function validate(value) {
 
     let count = 0
     if (value.includes(controleLinhaColuna)) {
-        window.alert('PARABENS (Y)')
+        window.alert('PARABÉNS VOCÊ ENCONTROU A PRIMEIRA PALAVRA!')
         count++
         console.log(count)
         return controleLinhaColuna = 101
     }
     if (value.includes(controleLinhaColuna2)) {
-        window.alert('PARABENS (Y)')
+        window.alert('PARABENS VOCÊ ENCONTROU A SEGUNDA PALAVRA!')
         count++
         console.log(count)
         return controleLinhaColuna2 = 101
     }
     if (value.includes(controleLinhaColuna3)) {
-        window.alert('PARABENS (Y)')
+        window.alert('PARABÉNS VOCÊ ENCONTROU A TERCEIRA PALAVRA!')
         count++
         console.log(count)
         return controleLinhaColuna3 = 101
     }
 
-    if (count > 2) {
-        window.alert('PARABENS, VOCÊ GANHOU O JOGO, CASO QUEIRA, VÁ JOGAR PEDRA, PAPEL E TESOURA')
-        window.alert('ou não')
-    }
-
     console.log(controleLinhaColuna)
 }
-
 
 const botaoReset = document.getElementById('RESET')
 botaoReset.addEventListener('click', () => {
     document.location.reload(true);
 })
-
-
-
-/* 1. TABLE
-    2. TABLE CABEÇALHO
-    3. TBODY
-        3.1 - TR - LINHAS
-            3.2 - TD  - COLUNAS (ESSAS SÃO AS QUE RECEBEM CONTEUDO)
-*/

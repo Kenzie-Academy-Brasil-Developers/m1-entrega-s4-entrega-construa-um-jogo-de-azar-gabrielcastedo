@@ -5,44 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/cacapalavras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/cacapalavras.css">
     <title>Caça-palavras!</title>
 </head>
 
 <body>
+
     <section id="titulo">
-        <h1>CAÇA PALAVRAS - ESPORTE</h1>
+        <h1>CAÇA-PALAVRAS - ESPORTE</h1>
     </section>
+
+    <section class="details">
+        <details>
+            <summary>Regras do Jogo</summary>
+            <p> O jogador deverá encontrar as 3 palavras abaixo. </p>
+            <p> Estas palavras estarão embaralhadas entre letras aleatórias. </p>
+            <p> Elas estão posicionadas na horizontal. </p>
+            <p> Seu dever é achar as 3 palavras perdidas. </p>
+        </details>
+    </section>
+
+    <a href="index.html" target="_self" rel="noopener noreferrer"> <button class="btn-home"> Home</button></a>
 
     <div id="tema">
         <ul>
-            <p class="paiPalavras">ENCONTRE ESSAS PALAVRAS NA ORDEM CORRETA:</p>
+            <p class="paiPalavras">Encontre as palavras:</p>
             <li id='palavra1'>Esporte 1</li>
             <li id='palavra2'>Esporte 2</li>
             <li id='palavra3'>Esporte 3</li>
         </ul>
     </div>
 
-
     <section id="paiDaDivTabela">
         <div id="divTabelaPai">
-            <!--             <table id = "tabela">
-                
-            </table> -->
         </div>
     </section>
 
     <div id="botoes">
-        <button id="RESET">SOU RUIM, QUERO RESETAR O JOGO</button>
+        <button id="RESET">RESET</button>
     </div>
 
-    <footer>
-        <h3>Dev's:</h3>
-        <p>Gabriel Castedo, Natanael Matos,Dylan Almeida, Lissandro Miranda</p>
-        <p>*Participação do coach Fernão :) </p>
-    </footer>
-    <script type="text/javascript" src="/assets/script/cacapalavras.js"></script>
+    <script type="text/javascript" src="assets/script/cacapalavras.js"></script>
 </body>
 
 </html>
