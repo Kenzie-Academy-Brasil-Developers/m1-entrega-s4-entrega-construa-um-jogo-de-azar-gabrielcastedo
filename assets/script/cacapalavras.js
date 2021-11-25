@@ -77,7 +77,7 @@ function criarTabelaComPalavra() {
     for (let i = 0; i < randomWord1.length; i++) {
         arrTable[randomNumberRow1][randomNumberColumn1] = randomWord1[i];
         randomNumberColumn1++
-        controleLinhaColuna.push(((randomNumberRow1*10)+randomNumberColumn1))
+        controleLinhaColuna.push(((randomNumberRow1 * 10) + randomNumberColumn1))
         console.log(controleLinhaColuna)
     }
     controleLinhaColuna = controleLinhaColuna.join(', ')
@@ -86,7 +86,7 @@ function criarTabelaComPalavra() {
     for (let i = 0; i < randomWord2.length; i++) {
         arrTable[randomNumberRow2][randomNumberColumn2] = randomWord2[i];
         randomNumberColumn2++
-        controleLinhaColuna2.push(((randomNumberRow2*10)+randomNumberColumn2))
+        controleLinhaColuna2.push(((randomNumberRow2 * 10) + randomNumberColumn2))
         console.log(controleLinhaColuna2)
     }
     controleLinhaColuna2 = controleLinhaColuna2.join(', ')
@@ -94,7 +94,7 @@ function criarTabelaComPalavra() {
     for (let i = 0; i < randomWord3.length; i++) {
         arrTable[randomNumberRow3][randomNumberColumn3] = randomWord3[i];
         randomNumberColumn3++
-        controleLinhaColuna3.push(((randomNumberRow3*10)+randomNumberColumn3))
+        controleLinhaColuna3.push(((randomNumberRow3 * 10) + randomNumberColumn3))
         console.log(controleLinhaColuna3)
     }
     controleLinhaColuna3 = controleLinhaColuna3.join(', ')
@@ -141,18 +141,18 @@ function criandoHTML() {
             conteudoTabela.id = cellId;
             conteudoTabela.innerHTML = arrTable[indice][z]
             linha.appendChild(conteudoTabela)
-            conteudoTabela.addEventListener('click', function (event){
+            conteudoTabela.addEventListener('click', function (event) {
                 conteudoTabela.classList.add('selected')
                 console.log(event.target.parentElement)
                 valorIdTarget.push(+event.target.id)
-                valorIdTarget.sort(function(a,b){
-                    return a-b
+                valorIdTarget.sort(function (a, b) {
+                    return a - b
                 })
                 validate(valorIdTarget)
             })
             cellId++
         }
-        tbody.appendChild(linha)   
+        tbody.appendChild(linha)
     }
     tabela.classList.add('tabela')
 }
@@ -160,38 +160,38 @@ function criandoHTML() {
 criandoHTML()
 
 function validate(value) {
-    
-/*     value = Array.from(value) */
+
+    /*     value = Array.from(value) */
     console.log(value)
     console.log(typeof value)
     console.log(typeof controleLinhaColuna)
     value = value.join(', ')
 
     let count = 0
-    if(value.includes(controleLinhaColuna)){
+    if (value.includes(controleLinhaColuna)) {
         window.alert('PARABENS (Y)')
         count++
         console.log(count)
         return controleLinhaColuna = 101
     }
-    if(value.includes(controleLinhaColuna2)){
+    if (value.includes(controleLinhaColuna2)) {
         window.alert('PARABENS (Y)')
         count++
         console.log(count)
         return controleLinhaColuna2 = 101
     }
-    if(value.includes(controleLinhaColuna3)){
+    if (value.includes(controleLinhaColuna3)) {
         window.alert('PARABENS (Y)')
         count++
         console.log(count)
         return controleLinhaColuna3 = 101
     }
-    
-    if(count > 2){
+
+    if (count > 2) {
         window.alert('PARABENS, VOCÊ GANHOU O JOGO, CASO QUEIRA, VÁ JOGAR PEDRA, PAPEL E TESOURA')
         window.alert('ou não')
     }
-    
+
     console.log(controleLinhaColuna)
 }
 
