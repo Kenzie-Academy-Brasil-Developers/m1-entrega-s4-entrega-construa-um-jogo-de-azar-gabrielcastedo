@@ -1,50 +1,55 @@
 body {
     width: auto;
+    background-color: #74BDCB;
 }
 
-body img{
-    opacity: 0.5;
-}
 
-#titulo{
+#titulo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: 'graduate';
     background-color: lightsalmon;
     font-size: 18px;
 }
 
-#tema{
+#tema {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Graduate', cursive;
+    font-family: 'Graduate';
     font-size: 18px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     color: black;
 }
+#temaEsporte{
+    width: 50%;
+}
+ul{
+    padding: 0px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+li {
+    list-style: none;
 
-li{
-  list-style: none;  
-  text-align: center;
 }
 
 #botoes {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 button {
-    font-family: 'Graduate', cursive;
+    font-family: 'Graduate';
 }
 
 #RESET {
-    margin-left: 25px;
-}
-
-#paiDaDivTabela{
+    margin-left: 0px;
 }
 
 #divTabelaPai {
@@ -71,4 +76,128 @@ td {
     font-family: 'Graduate', cursive;
     font-size: 20px;
     background-color: lightyellow;
+}
+
+td:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+footer{
+    font-family: 'Graduate', cursive;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selected {
+    background-color: red;
+}
+
+
+
+
+@media ( min-width: 720px ){
+    body {
+        width: auto;
+    }
+    
+    body img {
+        opacity: 0.5;
+    }
+    
+    #titulo {
+        display: flex;
+        justify-content: center;
+        font-family: 'graduate';
+        background-color: lightsalmon;
+        font-size: 18px;
+    }
+    
+    #tema {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Graduate';
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    #temaEsporte{
+        width: 50%;
+    }
+
+    li {
+        list-style: none;
+        color: black;
+    }
+    
+    #botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    button {
+        font-family: 'Graduate';
+    }
+    
+    #RESET {
+        margin-left: 25px;
+    }
+    
+    #divTabelaPai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    tbody {
+        border: solid black 2px;
+    }
+    
+    .tabela {
+        border: solid black 1px;
+    }
+    
+    td {
+        border: solid black 1px;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        font-family: 'Graduate', cursive;
+        font-size: 20px;
+        background-color: lightyellow;
+    }
+    
+    td:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .selected {
+        background-color: red;
+    }
+
+    footer{
+        font-family: 'Graduate', cursive;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p{
+        display: flex;
+        justify-content: center;
+    }
 }
