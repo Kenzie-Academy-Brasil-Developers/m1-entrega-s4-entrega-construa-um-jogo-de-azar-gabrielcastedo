@@ -1,0 +1,12 @@
+body {
+  background-image: url("../img/casino-table.jpg");
+}
+
+h1 {
+  color: red;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+}
