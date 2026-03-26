@@ -1,5 +1,6 @@
 body {
   background-image: url("../img/casino-table.jpg");
+  font-family: "Montserrat", sans-serif;
   no-repeat: no-repeat;
   background-size: cover;
 }
@@ -81,7 +82,7 @@ li {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: #959595;
 }
 
 input {
@@ -89,4 +90,5 @@ input {
   border-radius: 5px;
   padding: 12px 20px;
   font-size: 16px;
+  text-align: center;
 }
