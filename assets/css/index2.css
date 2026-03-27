@@ -1,0 +1,94 @@
+body {
+  background-image: url("../img/casino-table.jpg");
+  font-family: "Montserrat", sans-serif;
+  no-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pagina-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+}
+
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-kenssino {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.send-name-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.creator-names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-of-devs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.link-dev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #959595;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: center;
+}
