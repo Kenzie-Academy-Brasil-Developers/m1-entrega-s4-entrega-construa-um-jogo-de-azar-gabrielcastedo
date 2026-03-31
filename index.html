@@ -1,48 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- Icone github -->
+    <!--
+    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>
+    -->
+  </head>
+  <body>
+    <section class="pagina-inicial">
+      <header>
+        <h1>Em construção...</h1>
+        <img src="./assets/img/Kenssino-removebg-preview.png" />
+      </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <title>Seleção de jogos</title>
-</head>
+      <div class="welcome-div">
+        <h3 class="welcome-kenssino">Welcome to Kenssino!</h3>
+        <input placeholder="your name..." />
+        <button class="send-name-button">Play!</button>
+      </div>
 
-<body>
-    <audio controls volume="30">
-        <source src="assets/img/Cartoon - Why We Lose (feat. Coleman Trapp) [NCS Release].mp3" type="audio/mpeg"
-            loop="true" autostart="true">
-    </audio>
-
-    <header>
-
-        <h1>Bem-vindo!</h1>
-        <h1>Selecione o jogo que quer jogar:</h1>
-
-    </header>
-
-    <main>
-        <section class="jogo-ppt">
-            <a href="ppt.html" target="_self" rel="noopener noreferrer">
-                <img src="assets/img/image (3).png" alt="">
+      <div class="creator-names">
+        <h3>Dev's</h3>
+        <ul class="list-of-devs">
+          <li>
+            <a
+              class="link-dev"
+              href="https://github.com/gabrielcastedo"
+              title="github link dev"
+            >
+              <img
+                class="github-icon"
+                src="./assets/img/github.png"
+                alt="github icon"
+              />
+              Gabriel Castedo
             </a>
-        </section>
-
-        <section class="jogo-cp">
-            <a href="cacapalavras.html" target="_self" rel="noopener noreferrer">
-                <img src="assets/img/imagem_4.png" alt="">
+          </li>
+          <li>
+            <a
+              class="link-dev"
+              href="https://github.com/natanzbm"
+              title="github link dev"
+            >
+              <img
+                class="github-icon"
+                src="./assets/img/github.png"
+                alt="github icon"
+              />
+              Natanael Matos
             </a>
-        </section>
-    </main>
-
-    <footer>
-        <h3>Dev's:</h3>
-        <p>Gabriel Castedo, Natanael Matos, Dylan Almeida e Lissandro Miranda.</p>
-    </footer>
-
-</body>
-
+          </li>
+          <li>
+            <a
+              class="link-dev"
+              href="https://github.com/almeidadylan"
+              title="github link dev"
+            >
+              <img
+                class="github-icon"
+                src="./assets/img/github.png"
+                alt="github icon"
+              />
+              Dylan Almeida
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-dev"
+              href="https://github.com/lissandrojs"
+              title="github link dev"
+            >
+              <img
+                class="github-icon"
+                src="./assets/img/github.png"
+                alt="github icon"
+              />
+              Lissandro Miranda
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>
